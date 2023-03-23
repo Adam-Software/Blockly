@@ -20,6 +20,7 @@ goog.require('Blockly.Python.logic');
 goog.require('Blockly.Python.loops');
 goog.require('Blockly.Python.math');
 goog.require('Blockly.Python.procedures');
+goog.require('Blockly.Python.system_call')
 goog.require('Blockly.Python.texts');
 goog.require('Blockly.Python.variables');
 goog.require('Blockly.Python.variablesDynamic');
