@@ -6,14 +6,16 @@
 
 /**
  * @fileoverview System call blocks for Blockly.
+ * @suppress {checkTypes}
  */
 
-import * as goog from '../closure/goog/goog.js';
-goog.declareModuleId('Blockly.libraryBlocks.system_call');
+'use strict';
 
-import {createBlockDefinitionsFromJsonArray, defineBlocks} from '../core/common.js';
+goog.module('Blockly.libraryBlocks.systemCall');
 
-export const blocks = createBlockDefinitionsFromJsonArray([
+const {createBlockDefinitionsFromJsonArray, defineBlocks} = goog.require('Blockly.common');
+
+const blocks = createBlockDefinitionsFromJsonArray([
   // systems_os_system
   {
     "type": "systems_os_system",
@@ -54,5 +56,4 @@ export const blocks = createBlockDefinitionsFromJsonArray([
     "tooltip": "Модуль подпроцесса позволяет создавать новые процессы, подключаться к их каналам ввода/вывода/ошибок и получать их коды возврата.",
     "helpUrl": "https://docs.python.org/3/library/subprocess.html"
   }
-
 ]);
