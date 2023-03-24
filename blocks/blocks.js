@@ -46,5 +46,5 @@ exports.variablesDynamic = variablesDynamic;
  */
 const blocks = Object.assign(
     {}, colour.blocks, lists.blocks, logic.blocks, loops.blocks, math.blocks,
-    procedures.blocks, systemCall..blocks, variables.blocks, variablesDynamic.blocks);
+    procedures.blocks, systemCall.blocks, variables.blocks, variablesDynamic.blocks);
 exports.blocks = blocks;
