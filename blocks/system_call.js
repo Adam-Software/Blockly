@@ -24,13 +24,13 @@ const blocks = createBlockDefinitionsFromJsonArray([
       {
         "type": "input_value",
         "name": "param",
-        "check": "String"
-      }
+        "check": "String",
+      },
     ],
     "output": null,
     "colour": 230,
     "tooltip": "Модуль подпроцесса позволяет создавать новые процессы, подключаться к их каналам ввода/вывода/ошибок и получать их коды возврата.",
-    "helpUrl": "https://docs.python.org/3/library/os.html#os.system"
+    "helpUrl": "https://docs.python.org/3/library/os.html#os.system",
   },
 
   // systems_subprocess_call
@@ -42,18 +42,22 @@ const blocks = createBlockDefinitionsFromJsonArray([
       {
         "type": "input_value",
         "name": "param",
-        "check": "String"
+        "check": "String",
       },
       {
         "type": "field_checkbox",
         "name": "shell",
-        "checked": true
-      }
+        "checked": true,
+      },
     ],
     "inputsInline": false,
     "output": null,
     "colour": 230,
     "tooltip": "Модуль подпроцесса позволяет создавать новые процессы, подключаться к их каналам ввода/вывода/ошибок и получать их коды возврата.",
-    "helpUrl": "https://docs.python.org/3/library/subprocess.html"
-  }
+    "helpUrl": "https://docs.python.org/3/library/subprocess.html",
+  },
 ]);
+exports.blocks = blocks;
+
+// Register provided blocks.
+defineBlocks(blocks);
